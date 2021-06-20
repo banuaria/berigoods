@@ -1,0 +1,6 @@
+Personal access client created successfully.
+Client ID: 93ac6a70-42e6-4dc1-bb1b-a387df5847a2
+Client secret: ci6TFrjcU3ADiUb7NmRa9tF6JPTAbBvG7m3hMs0W
+Password grant client created successfully.
+Client ID: 93ac6a70-48fb-4d09-a2f3-23ac191a3c8a
+Client secret: uyR8RJZ8UltUzeWNLNuaD8QR9cvnglX62cqUsQVJ
