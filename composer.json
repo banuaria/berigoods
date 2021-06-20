@@ -19,9 +19,6 @@
         "laravel/ui": "^2.0",
         "midtrans/midtrans-php": "^2.3",
         "nesbot/carbon": "^2.49",
-        "veritrans/veritrans-php": "^1.2",
-        "xendit/xendit-php": "^2.10",
-        "xendit/xendit-php-clients": "^2.10",
         "yajra/laravel-datatables-oracle": "^9.0"
     },
     "require-dev": {
