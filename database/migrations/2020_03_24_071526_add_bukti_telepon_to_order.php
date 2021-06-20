@@ -15,7 +15,6 @@ class AddBuktiTeleponToOrder extends Migration
     {
         Schema::table('order', function (Blueprint $table) {
             $table->string('no_hp');
-            $table->string('bukti_pembayaran')->nullable();
         });
     }
 

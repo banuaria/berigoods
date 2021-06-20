@@ -20,7 +20,6 @@ class CreateOrderTable extends Migration
             $table->integer('subtotal');
             $table->string('no_resi')->nullable();
             $table->unsignedBigInteger('status_order_id');
-            $table->string('metode_pembayaran');
             $table->integer('ongkir');
             $table->timestamps();
         });
