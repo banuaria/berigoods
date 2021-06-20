@@ -189,38 +189,6 @@ class OrderController extends Controller
         
         $snapToken = \Midtrans\Snap::getSnapToken($params);
         return response()->json(['token'=> $snapToken]);
-
-        // $order = Order::findOrFail($id);
-
-        // $params = [
-        //     'enable_payments' => \App\Payment::PAYMENT_CHANNELS,
-        //     'transaction_details' => [
-        //         'order_id' => $order->invoice,
-        //         'gross_amount'=> $order->subtotal,
-        //     ],
-        //     'customer_details'=> [
-        //         'first_name' => 'yth, ',
-        //         'last_name' => $order->name,
-        //         'phone' => $order->no_hp,
-        //         'email' => Auth::user()->email,
-        //     ],
-        //     'expiry'=> [
-        //         'start_time' => date('Y-m-d H:i:s T'),
-        //         'unit' => \App\Payment::EXPIRY_UNIT,
-        //         'duration' => \App\Payment::EXPIRY_DURATION,
-        //     ],
-        // ];
-
-        // $snap = \Midtrans\Snap::createTransaction($params);
-		
-		// if ($snap->token) {
-		// 	$order->payment_token = $snap->token;
-		// 	$order->payment_url = $snap->redirect_url;
-        //     $order->status_order_id  = 2;
-		// 	$order->save();
-		// }
-        // $this->response['snapToken'] = $snapToken;
-        // return response()->json($this->response);
     }
     public function finish(Request $request)
     {
@@ -258,11 +226,5 @@ class OrderController extends Controller
             $stuff->save();
             return redirect()->route('user.order');
         }
-        // else if ($transaction == 'pending') {
-        //    return redirect()->route('user.order');
-        // }
-        // else if ($transaction == 'failure') {
-        //     return redirect()->route('user.order');
-        // }
     }
 }

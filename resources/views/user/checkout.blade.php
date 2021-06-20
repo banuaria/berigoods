@@ -68,14 +68,6 @@
                   <input type="hidden" name="subtotal" value="{{ $alltotal }}">
                   <input type="hidden" name="ongkir" value="{{ $ongkir }}">
                   <div class="form-group">
-                  {{-- <label for="">Pilih Metode Pembayaran</label>
-                    <select name="metode_pembayaran" id="" class="form-control">
-                      <option value="trf">Transfer</option>
-                      <option value="cod">Cod</option>
-                    </select>
-                    <small>Jika memilih cod maka akan dikenakan biaya tambahan sebesar Rp. 10.000,00</small>
-                  </div> --}}
-                 
 
                   <div class="form-group">
                     <button class="btn btn-primary btn-lg py-3 btn-block" type="submit">Pesan Sekarang</button>

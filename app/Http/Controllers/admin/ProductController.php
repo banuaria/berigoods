@@ -71,20 +71,6 @@ class ProductController extends Controller
         $product = Product::findOrFail($id);
         $image = $request->image;
         // // Lalu update data nya ke database
-        // if( $request->file('image')){
-
-        //     Storage::delete('public/'.$prod->image);
-        //     $file = $request->file('image')->store('imageproduct','public');
-        //     $prod->image = $file;
-        // }
-
-        // $prod->name = $request->name;
-        // $prod->description = $request->description;
-        // $prod->price = $request->price;
-        // $prod->weigth = $request->weigth;
-        // $prod->categories_id = $request->categories_id;
-        // $prod->stok = $request->stok;
-        // $prod->save();
 
 
 
