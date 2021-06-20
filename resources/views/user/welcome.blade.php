@@ -1,14 +1,14 @@
 @extends('user.app')
 @section('content')
-<div class="site-blocks-cover" style="background-image: url({{ asset('shopper') }}/images/shoes.jpg);" data-aos="fade">
+<div class="site-blocks-cover" style="background-image: url({{ asset('shopper') }}/images/beri.jpg);" data-aos="fade">
     <div class="container">
     <div class="row align-items-start align-items-md-center justify-content-end">
         <div class="col-md-5 text-center text-md-left pt-5 pt-md-0">
         <h1 class="mb-2">Cari Barang Kesukaan Kamu Disini</h1>
         <div class="intro-text text-center text-md-left">
-            <p class="mb-4 text-white">selling unique goods with good quality</p>
+            <p class="mb-4">selling unique goods with good quality</p>
             <p>
-            <a href="{{ route('user.produk') }}" class="btn btn-sm btn-success">Belanja Sekarang</a>
+            <a href="{{ route('user.produk') }}" class="btn btn-sm btn-primary">Belanja Sekarang</a>
             </p>
         </div>
         </div>
