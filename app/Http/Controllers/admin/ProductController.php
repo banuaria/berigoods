@@ -36,22 +36,7 @@ class ProductController extends Controller
 
     public function store(Request $request)
     {
-        //menyimpan produk ke database
-        // if($request->file('image')){
-        //     //simpan foto produk yang di upload ke direkteri public/storage/imageproduct
-        //     $file = $request->file('image')->store('imageproduct','public');
-
-        //     Product::create([
-        //         'name' => $request->name,
-        //         'description' => $request->description,
-        //         'price' => $request->price,
-        //         'stok' => $request->stok,
-        //         'weigth' => $request->weigth,
-        //         'categories_id' => $request->categories_id,
-
-        //         'image'          => $file
-
-        //     ]);
+     
         $image = $request->image;
         $newpic = time().$image->getClientOriginalName();
         $product = Product::create([
@@ -59,6 +44,7 @@ class ProductController extends Controller
                 'sku' => $request->sku,
                 'price' => $request->price,
                 'stok' => $request->stok,
+                'description' => $request->description,
                 'weigth' => $request->weigth,
                 'categories_id' => $request->categories_id,
                 'image'=> 'storage/imageproduct/'.$newpic,
